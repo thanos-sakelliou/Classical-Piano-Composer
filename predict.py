@@ -6,7 +6,7 @@ from music21 import instrument, note, stream, chord
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.layers import Dropout
-from keras.layers import LSTM
+from keras.layers import LSTM, CuDNNLSTM
 from keras.layers import Activation
 
 def generate():
