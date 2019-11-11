@@ -74,7 +74,9 @@ def create_network(network_input, n_vocab):
 def generate_notes(model, network_input, pitchnames, n_vocab):
     """ Generate notes from the neural network based on a sequence of notes """
     # pick a random sequence from the input as a starting point for the prediction
-    start = numpy.random.randint(0, len(network_input)-1)
+    #start = numpy.random.randint(0, len(network_input)-1)
+    #specific seed
+    start = 0
 
     int_to_note = dict((number, note) for number, note in enumerate(pitchnames))
 
